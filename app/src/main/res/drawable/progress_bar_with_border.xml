@@ -1,0 +1,23 @@
+<!-- res/drawable/progress_bar_with_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/progress_bar_border_color"
+                android:radius="20dp" /> <!-- Set border radius -->
+            <corners android:radius="20dp" /> <!-- Set corner radius -->
+        </shape>
+    </item>
+    <!-- Progress -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="@color/progress_bar_color" /> <!-- Warna progress -->
+                <corners android:radius="18dp" /> <!-- Set corner radius slightly less than the border radius -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

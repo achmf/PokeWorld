@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark">
+
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/pokemonImage"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:contentDescription="@string/default_description"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_back_arrow_white"
+        android:contentDescription="@string/default_description"
+        android:layout_alignTop="@id/pokemonImage"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:id="@+id/pokemonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/pokemonImage"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/pokemonHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Height"
+        android:layout_below="@id/pokemonName"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/pokemonWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Weight"
+        android:layout_below="@id/pokemonHeight"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/pokemonAbilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Ability"
+        android:layout_below="@id/pokemonWeight"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/pokemonTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/pokemonAbilities"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <!-- Types will be added programmatically -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pokemonStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/pokemon_stats_card_border_background"
+        android:elevation="4dp"
+        android:layout_below="@id/pokemonTypes"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp" >
+        <!-- Stats will be added programmatically -->
+    </LinearLayout>
+
+</RelativeLayout>

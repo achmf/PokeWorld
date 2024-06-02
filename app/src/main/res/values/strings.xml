@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Pokédex</string>
+    <string name="pokemon_types">Types: %s</string>
+    <string name="pokemon_stats">Stats: %s</string>
+    <string name="default_description">Hello World</string>
+
+    <string name="pokemon_height">Height: %1$d dm</string>
+    <string name="pokemon_weight">Weight: %1$d hg</string>
+    <string name="default_name">John Doe</string>
+    <string name="default_level">Level 12</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="pokemon">Pokemon</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="welcome_to_the_pokemon_world">Welcome to the Pokemon World!</string>
+    <string name="start_exploring">Start Exploring</string>
+    <string name="disclaimer_this_is_a_fan_made_app_and_is_not_affiliated_with_nintendo">This is a fan-made app and is not affiliated with Nintendo.</string>
+    <string name="pokedex">Pokédex</string>
+</resources>

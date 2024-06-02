@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.fragment.ProfileFragment">
+
+    <!-- Profile Avatar -->
+    <ImageView
+        android:id="@+id/imageProfileAvatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/red"
+        android:background="@drawable/circle_avatar_background"
+        android:contentDescription="@string/default_description"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true" />
+
+    <!-- Trainer's Name -->
+    <TextView
+        android:id="@+id/textTrainerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageProfileAvatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/default_name"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!-- Trainer's Level -->
+    <TextView
+        android:id="@+id/textTrainerLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTrainerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/default_level"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/buttonEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTrainerLevel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/edit_profile"
+        android:textStyle="bold"
+        android:textColor="@color/red" />
+
+</RelativeLayout>
